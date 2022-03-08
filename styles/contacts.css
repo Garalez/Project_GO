@@ -1,0 +1,31 @@
+.contacts__address {
+  background-image: url("/figma/location.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 50px;
+  margin-bottom: 36px;
+}
+
+.contacts__phone {
+  background-image: url("/figma/call1.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 50px;
+  margin-bottom: 11px;
+}
+
+.contacts__mail {
+  background-image: url("/figma/mail.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 50px;
+}
+
+.social {
+  display: flex;
+  margin: 40px 0 100px 0;
+}
+
+.social-item:not(:first-child) {
+  margin-left: 26px;
+}

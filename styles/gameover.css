@@ -1,0 +1,41 @@
+.gameover {
+  position: relative;
+  background-image: url("/figma/hard/Group.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 930px;
+}
+
+.gameover__title {
+  width: 100%;
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.gameover__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  margin-left: 200px;
+}
+
+.gameover__subtitle::before {
+  position: absolute;
+  content: "";
+  background-image: url("/figma/hard/main.png");
+  width: 675px;
+  height: 762px;
+  bottom: 70px;
+  left: 505px;
+}
+
+.gameover__subtitle::after {
+  position: absolute;
+  content: "";
+  background-image: url("/figma/hard/footer.png");
+  width: 100%;
+  height: 80px;
+  top: 850px;
+  left: 0;
+}

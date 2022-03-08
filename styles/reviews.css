@@ -1,0 +1,25 @@
+.reviews__wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.reviews__wrapper:last-child {
+  margin-bottom: 100px;
+}
+
+.reviews__name {
+  width: 280px;
+  height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.reviews__text {
+  margin: 55px 0 0 20px;
+  width: 680px;
+  height: 100%;
+  line-height: 28px;
+}
