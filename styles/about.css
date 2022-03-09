@@ -61,7 +61,7 @@
 .about__quote::after {
   position: absolute;
   content: "";
-  background-image: url("./img/before.png");
+  background-image: url("../img/before.png");
   background-repeat: no-repeat;
   transform: rotate(180deg);
   width: 22px;
