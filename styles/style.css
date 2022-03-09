@@ -1,20 +1,20 @@
-@import url("styles/menu.css");
+@import url("/styles/menu.css");
 
-@import url("styles/we-have.css");
+@import url("/styles/we-have.css");
 
-@import url("styles/gameover.css");
+@import url("/styles/gameover.css");
 
-@import url("styles/halls.css");
+@import url("/styles/halls.css");
 
-@import url("styles/book.css");
+@import url("/styles/book.css");
 
-@import url("styles/about.css");
+@import url("/styles/about.css");
 
-@import url("styles/reviews.css");
+@import url("/styles/reviews.css");
 
-@import url("styles/questions.css");
+@import url("/styles/questions.css");
 
-@import url("styles/contacts.css");
+@import url("/styles/contacts.css");
 
 html {
     position: relative;
