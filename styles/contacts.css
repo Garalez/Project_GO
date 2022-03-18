@@ -1,3 +1,16 @@
+.footer__wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+}
+
+.contacts__wrapper {
+  height: 274px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__address {
   background-image: url("../img/location.svg");
   background-repeat: no-repeat;
@@ -28,4 +41,28 @@
 
 .social-item:not(:first-child) {
   margin-left: 26px;
+}
+
+.footer__caption {
+  height: 184px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.caption__second {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.footer__caption-text {
+  text-align: right;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.left-side {
+  margin-bottom: 22px;
 }

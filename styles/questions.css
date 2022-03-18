@@ -1,7 +1,3 @@
-.questions__item:last-child {
-  margin-bottom: 100px;
-}
-
 .questions__item {
   position: relative;
   background-color: #fff;

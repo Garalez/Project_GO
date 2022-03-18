@@ -1,0 +1,35 @@
+.menu {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 96px;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.menu__button {
+  width: 280px;
+  height: 55px;
+  margin-left: 96px;
+  padding-top: 4px;
+  background-color: inherit;
+  border: 3px solid #cd06ff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}

@@ -1,23 +1,20 @@
 .gameover {
   position: relative;
-  background-image: url("../img/hard/Group.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  height: 930px;
+  height: 820px;
 }
 
 .gameover__title {
   width: 100%;
-  font-weight: 900;
-  font-size: 200px;
   line-height: 100%;
+  font-weight: 900;
+  font-size: 150px;
   letter-spacing: -0.1em;
 }
 
 .gameover__subtitle {
   font-size: 28px;
   line-height: 50px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .gameover__subtitle::before {
@@ -26,16 +23,70 @@
   background-image: url("../img/hard/main.png");
   width: 675px;
   height: 762px;
-  bottom: 70px;
-  left: 505px;
+  bottom: 0;
+  right: 0;
 }
 
 .gameover__subtitle::after {
   position: absolute;
   content: "";
-  background-image: url("../img/hard/footer.png");
-  width: 100%;
+  background-image: url("../img/down.png");
+  width: 97px;
+  height: 97px;
+  bottom: 85px;
+  left: 46%;
+}
+
+.gamover__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  width: 527px;
+  margin-top: 50px;
+}
+
+.gameover__second-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gameover__text-digit {
+  text-align: center;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #cd06ff;
+}
+
+.gameover__text-new {
+  text-align: center;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: small-caps;
+  color: #cd06ff;
+}
+
+.gameover__text {
+  max-width: 193px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+}
+
+.gameover__button {
+  margin-top: 150px;
+  width: 374px;
   height: 80px;
-  top: 850px;
-  left: 0;
+  background: #6c0287;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 1em #6c0287;
+  font-weight: 700;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
