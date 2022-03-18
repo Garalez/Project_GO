@@ -121,6 +121,7 @@
 }
 
 .date__input {
+  position: relative;
   margin-top: 6px;
   width: 300px;
   height: 52px;
