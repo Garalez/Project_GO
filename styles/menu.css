@@ -33,3 +33,15 @@
   text-transform: uppercase;
   color: #ffffff;
 }
+
+.menu__button:hover {
+  background: #6c0287;
+}
+
+.menu__button:focus {
+  background: #6c0287;
+}
+
+.menu__button:active {
+  background: #640aa3;
+}

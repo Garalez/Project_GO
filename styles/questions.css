@@ -1,11 +1,20 @@
 .questions__item {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 87px;
+  padding: 0 70px;
   background-color: #fff;
   color: #1c1a1a;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 70px;
   list-style: none;
+}
+
+.questions__item-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .questions__item:not(:last-child) {
@@ -17,28 +26,84 @@
   color: white;
 }
 
-.questions__item:nth-child(even):after {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/open.svg");
-  background-size: contain;
-  top: 50%;
-  left: 93%;
-  transform: translate(-50%, -50%);
+.questions__item-button__even {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
 }
 
-.questions__item:nth-child(odd):after {
+.questions__item-button__even:before {
   position: absolute;
   content: "";
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/open-purple.svg");
-  background-size: contain;
+  background-image: url("../img/cross-white.svg");
+  width: 20px;
+  height: 20px;
+  top: 27%;
+  right: 25%;
+}
+
+.questions__item-button__odd {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #440f51;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.questions__item-button__odd:before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/cross-purple.svg");
+  width: 20px;
+  height: 20px;
+  top: 27%;
+  right: 25%;
+}
+
+.questions__item-button__even:hover {
+  background: white;
+}
+
+.questions__item-button__even:hover:before {
+  background-image: url("../img/cross-purple.svg");
+}
+
+.questions__item-button__odd:hover {
+  background: #6c0287;
+}
+
+.questions__item-button__odd:hover:before {
+  background-image: url("../img/cross-white.svg");
+}
+
+.questions__item-button__even:active {
+  background: transparent;
+}
+
+.questions__item-button__even:active:before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/minus-white.svg");
+  width: 20px;
+  height: 1px;
   top: 50%;
-  left: 93%;
-  transform: translate(-50%, -50%);
+  right: 25%;
+}
+
+.questions__item-button__odd:active {
+  background: transparent;
+}
+
+.questions__item-button__odd:active:before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/minus-purple.svg");
+  width: 20px;
+  height: 1px;
+  top: 50%;
+  right: 25%;
 }

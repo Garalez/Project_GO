@@ -170,3 +170,42 @@
   line-height: 28px;
   color: #211e1e;
 }
+
+.book__input-button:hover {
+  background: #eadeed;
+  border: 3px solid #640aa3;
+}
+
+.book__input-button:focus {
+  background: #ffffff;
+  border: 3px solid #640aa3;
+}
+
+.book__input-button:active {
+  background: #eadeed;
+  border: none;
+}
+
+.date__submit:hover {
+  background: #eadeed;
+  border: 3px solid #6c0287;
+}
+.date__submit:focus {
+  background: #ffffff;
+  border: 3px solid #6c0287;
+}
+.date__submit:active {
+  background: #eadeed;
+  border: none;
+}
+
+.date__input:focus {
+  border: 2px solid #cd06ff;
+  outline: none;
+}
+
+.joy__console-input:focus,
+.board-games__input:focus,
+.addition__input:focus {
+  outline: 1px solid #cd06ff;
+}

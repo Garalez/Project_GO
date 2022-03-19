@@ -66,3 +66,17 @@
 .left-side {
   margin-bottom: 22px;
 }
+
+.social__link-img {
+  border-radius: 50%;
+}
+
+.social__link-img:hover {
+  background: #eadeed;
+}
+.social__link-img:focus {
+  background: #eadeed;
+}
+.social__link-img:active {
+  background: #cd06ff;
+}

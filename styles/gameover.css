@@ -27,17 +27,7 @@
   right: 0;
 }
 
-.gameover__subtitle::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/down.png");
-  width: 97px;
-  height: 97px;
-  bottom: 85px;
-  left: 46%;
-}
-
-.gamover__text-wrapper {
+.gameover__text-wrapper {
   display: flex;
   flex-wrap: wrap;
   column-gap: 40px;
@@ -77,7 +67,7 @@
   text-align: center;
 }
 
-.gameover__button {
+.gameover__book-button {
   margin-top: 150px;
   width: 374px;
   height: 80px;
@@ -89,4 +79,82 @@
   font-size: 26px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.gameover__round-button {
+  position: relative;
+  display: inline-block;
+  top: 438px;
+  left: 542px;
+  width: 97px;
+  height: 97px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 50%;
+  color: white;
+}
+
+.gameover__round-button::before {
+  position: absolute;
+  content: "";
+  width: 18.82px;
+  height: 20.02px;
+  background-image: url("../img/v1.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-85deg);
+  left: 36%;
+  top: 40%;
+}
+
+.gameover__round-button::after {
+  position: absolute;
+  content: "";
+  width: 18.82px;
+  height: 20.02px;
+  background-image: url("../img/v1.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-180deg);
+  left: 46%;
+  top: 40%;
+}
+
+.gameover__book-button:hover {
+  background: #840aa3;
+}
+
+.gameover__book-button:focus {
+  background: #840aa3;
+}
+
+.gameover__book-button:active {
+  background: #640aa3;
+}
+
+.gameover__round-button:hover {
+  background: #ffffff;
+}
+
+.gameover__round-button:hover::before {
+  background-image: url("../img/v1violet.svg");
+}
+
+.gameover__round-button:hover::after {
+  background-image: url("../img/v1violet.svg");
+}
+
+.gameover__round-button:focus {
+  background: transparent;
+}
+
+.gameover__round-button:focus::before {
+  background-image: url("../img/v1.svg");
+}
+
+.gameover__round-button:focus::after {
+  background-image: url("../img/v1.svg");
+}
+
+.gameover__round-button:active {
+  background: #cd06ff;
 }
