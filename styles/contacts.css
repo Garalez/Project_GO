@@ -56,6 +56,11 @@
   row-gap: 6px;
 }
 
+.footer__caption-second__link {
+  align-self: flex-end;
+  width: 135px;
+}
+
 .footer__caption-first__text,
 .footer__caption-second__text,
 .footer__caption-second__link {

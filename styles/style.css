@@ -54,6 +54,7 @@ button {
 a {
     color: inherit;
     text-decoration-color: #cd06ff;
+    text-decoration-thickness: 4px;
 }
 
 a:hover {
