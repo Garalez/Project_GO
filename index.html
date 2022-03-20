@@ -204,10 +204,10 @@
                 <h4 class="addition__title joy__console-title">Дополнительно</h4>
                 <ul class="addition__list">
                   <li class="addition__item">
-                    <input type="checkbox" name="added" value="Karaoke" class="addition__input board-games__input">Караоке
+                    <input type="checkbox" name="added" value="Karaoke" class="addition__input">Караоке
                   </li>
                   <li class="addition__item">
-                    <input type="checkbox" name="added" value="VR" class="addition__input board-games__input">VR
+                    <input type="checkbox" name="added" value="VR" class="addition__input">VR
                   </li>
                 </ul>
               </fieldset>
@@ -225,19 +225,19 @@
                   <input type="time" name="time" required class="date__input when" id="time">
                 </label>
               </div>
-              <label class="date__first-name input__text" for="name">Имя
+              <label class="date__first-name input-text" for="name">Имя
                 <input type="text" name="first name" required class="date__input" id="name">
               </label>
-              <label class="date__phone input__text" for="phone">Телефон
+              <label class="date__phone input-text" for="phone">Телефон
                 <input type="tel" name="phone" required class="date__input" id="phone">
               </label>
               <label class="date__quantity" for="peoples">
-                <input type="number" name="count" required class="date__input placeholder__text" placeholder="Сколько человек" id="peoples">
+                <input type="number" name="count" required class="date__input placeholder-text" placeholder="Сколько человек" id="peoples">
               </label>
-              <label class="date__last-name input__text" for="surname">Фамилия
+              <label class="date__last-name input-text" for="surname">Фамилия
                 <input type="text" name="second name" required class="date__input" id="surname">
               </label>
-              <label class="date__mail input__text" for="mail">E-mail
+              <label class="date__mail input-text" for="mail">E-mail
                 <input type="email" name="email" required class="date__input" id="mail">
               </label>
             </div>
@@ -350,7 +350,7 @@
     </article>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="footer__wrapper">
       <section class="contacts " id="contacts">
         <h2 class="contacts__title heading">Контакты</h2>
@@ -383,12 +383,14 @@
       </section>
 
       <div class="footer__caption">
-        <p class="footer__caption-text left-side">© Game Over, 2022</p>
+        <div class="footer__caption-first">
+          <p class="footer__caption-first__text left-side">© Game Over, 2022</p>
+        </div>
   
-        <div class="caption__second">
-          <p class="footer__caption-text">Design by Anastasia Ilina</p>
+        <div class="footer__caption-second">
+          <p class="footer__caption-second__text">Design by Anastasia Ilina</p>
 
-          <a class="footer__caption-text" href="mail" >ilina9825@gmail.com</a>
+          <a class="footer__caption-second__link" href="mailto:ilina9825@gmail.com" >ilina9825@gmail.com</a>
         </div>
       </div>
     </div>

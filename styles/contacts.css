@@ -50,13 +50,15 @@
   align-items: flex-end;
 }
 
-.caption__second {
+.footer__caption-second {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
 }
 
-.footer__caption-text {
+.footer__caption-first__text,
+.footer__caption-second__text,
+.footer__caption-second__link {
   text-align: right;
   font-weight: 400;
   font-size: 14px;
