@@ -74,6 +74,10 @@
   margin-bottom: 22px;
 }
 
+.social__link:hover {
+  background: transparent;
+}
+
 .social__link-img {
   border-radius: 50%;
 }
