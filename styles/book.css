@@ -1,10 +1,8 @@
 .book {
-  height: 1114px;
+  max-width: 1240px;
+  padding: 80px 30px;
+  margin: 0 auto;
   background: #440f51;
-}
-
-.book__wrapper {
-  padding-top: 30px;
 }
 
 .book__title {
@@ -171,21 +169,6 @@
   color: #211e1e;
 }
 
-.book__input-button:hover {
-  background: #eadeed;
-  border: 3px solid #640aa3;
-}
-
-.book__input-button:focus {
-  background: #ffffff;
-  border: 3px solid #640aa3;
-}
-
-.book__input-button:active {
-  background: #eadeed;
-  border: none;
-}
-
 .date__submit:hover {
   background: #eadeed;
   border: 3px solid #6c0287;
@@ -208,4 +191,48 @@
 .board-games__input:focus,
 .addition__input:focus {
   outline: 1px solid #cd06ff;
+}
+
+.book__input-button {
+  display: none;
+}
+
+.book__halls {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.book__halls-label {
+  display: inline-block;
+  width: 250px;
+  height: 55px;
+  padding-top: 7px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: black;
+  text-align: center;
+}
+
+.book__halls-wrapper {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.book__halls-label:hover {
+  background: #eadeed;
+  border: 3px solid #640aa3;
+}
+
+.book__halls-label:focus {
+  background: #ffffff;
+  border: 3px solid #640aa3;
+}
+
+.book__input-button:checked + .book__halls-label {
+  background: #eadeed;
 }

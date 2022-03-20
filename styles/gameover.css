@@ -1,6 +1,9 @@
 .gameover {
   position: relative;
-  height: 820px;
+  height: 890px;
+  max-width: 1215px;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
 }
 
 .gameover__title {
@@ -14,17 +17,19 @@
 .gameover__subtitle {
   font-size: 28px;
   line-height: 50px;
-  margin-left: 100px;
+  padding-left: 100px;
+  margin-bottom: 40px;
 }
 
-.gameover__subtitle::before {
+.gameover__title::before {
   position: absolute;
   content: "";
   background-image: url("../img/hard/main.png");
+  background-repeat: no-repeat;
   width: 675px;
   height: 762px;
-  bottom: 0;
-  right: 0;
+  bottom: 50px;
+  right: 36px;
 }
 
 .gameover__text-wrapper {
@@ -32,7 +37,7 @@
   flex-wrap: wrap;
   column-gap: 40px;
   width: 527px;
-  margin-top: 50px;
+  margin-bottom: 150px;
 }
 
 .gameover__second-wrapper {
@@ -68,7 +73,6 @@
 }
 
 .gameover__book-button {
-  margin-top: 150px;
   width: 374px;
   height: 80px;
   background: #6c0287;
@@ -82,41 +86,17 @@
 }
 
 .gameover__round-button {
-  position: relative;
-  display: inline-block;
-  top: 438px;
-  left: 542px;
+  position: absolute;
+  content: "";
+  background-image: url("../img/down.svg");
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
   width: 97px;
   height: 97px;
-  border: 1px solid #ffffff;
-  box-sizing: border-box;
-  background-color: transparent;
-  border-radius: 50%;
-  color: white;
-}
-
-.gameover__round-button::before {
-  position: absolute;
-  content: "";
-  width: 18.82px;
-  height: 20.02px;
-  background-image: url("../img/v1.svg");
-  background-repeat: no-repeat;
-  transform: rotate(-85deg);
-  left: 36%;
-  top: 40%;
-}
-
-.gameover__round-button::after {
-  position: absolute;
-  content: "";
-  width: 18.82px;
-  height: 20.02px;
-  background-image: url("../img/v1.svg");
-  background-repeat: no-repeat;
-  transform: rotate(-180deg);
-  left: 46%;
-  top: 40%;
+  top: 79%;
+  left: 48%;
+  transform: translate(-50%, -50%);
 }
 
 .gameover__book-button:hover {
@@ -132,29 +112,13 @@
 }
 
 .gameover__round-button:hover {
-  background: #ffffff;
-}
-
-.gameover__round-button:hover::before {
-  background-image: url("../img/v1violet.svg");
-}
-
-.gameover__round-button:hover::after {
-  background-image: url("../img/v1violet.svg");
+  background-image: url("../img/down-hover.svg");
 }
 
 .gameover__round-button:focus {
-  background: transparent;
-}
-
-.gameover__round-button:focus::before {
-  background-image: url("../img/v1.svg");
-}
-
-.gameover__round-button:focus::after {
-  background-image: url("../img/v1.svg");
+  background-image: url("../img/down-focus.svg");
 }
 
 .gameover__round-button:active {
-  background: #cd06ff;
+  background-image: url("../img/down-active.svg");
 }

@@ -62,6 +62,10 @@ ul {
     margin: 0;
 }
 
+fieldset {
+    border: none;
+}
+
 h1,
 h2,
 h3,
