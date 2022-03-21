@@ -45,6 +45,7 @@
 
 .footer__caption {
   height: 184px;
+  padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -74,20 +75,19 @@
   margin-bottom: 22px;
 }
 
-.social__link:hover {
-  background: transparent;
-}
-
 .social__link-img {
   border-radius: 50%;
 }
 
 .social__link-img:hover {
+  transition-duration: 200ms;
   background: #eadeed;
 }
 .social__link-img:focus {
+  transition-duration: 200ms;
   background: #eadeed;
 }
 .social__link-img:active {
+  transition-duration: 200ms;
   background: #cd06ff;
 }

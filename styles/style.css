@@ -52,13 +52,7 @@ button {
 }
 
 a {
-    color: inherit;
-    text-decoration-color: #cd06ff;
-    text-decoration-thickness: 4px;
-}
-
-a:hover {
-    background: #cd06ff;
+    text-decoration: none;
 }
 
 ul {
@@ -114,4 +108,28 @@ iframe {
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: uppercase;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    color: #cd06ff;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background: #cd06ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in;
+}
+
+.link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }

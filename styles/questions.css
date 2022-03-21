@@ -44,16 +44,20 @@
 }
 
 .questions__item:nth-child(odd):hover .questions__item-button {
+  transition-duration: 200ms;
   background-image: url("../img/open-hover-purple.svg");
 }
 
 .questions__item:nth-child(even):hover .questions__item-button {
+  transition-duration: 200ms;
   background-image: url("../img/open-hover.svg");
 }
 .questions__item:nth-child(odd):active .questions__item-button {
+  transition-duration: 200ms;
   background-image: url("../img/close-active-purple.svg");
 }
 
 .questions__item:nth-child(even):active .questions__item-button {
+  transition-duration: 200ms;
   background-image: url("../img/close-active-white.svg");
 }

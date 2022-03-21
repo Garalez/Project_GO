@@ -100,25 +100,31 @@
 }
 
 .gameover__book-button:hover {
+  transition-duration: 200ms;
   background: #840aa3;
 }
 
 .gameover__book-button:focus {
+  transition-duration: 200ms;
   background: #840aa3;
 }
 
 .gameover__book-button:active {
+  transition-duration: 200ms;
   background: #640aa3;
 }
 
 .gameover__round-button:hover {
+  transition-duration: 200ms;
   background-image: url("../img/down-hover.svg");
 }
 
 .gameover__round-button:focus {
+  transition-duration: 200ms;
   background-image: url("../img/down-focus.svg");
 }
 
 .gameover__round-button:active {
+  transition-duration: 200ms;
   background-image: url("../img/down-active.svg");
 }

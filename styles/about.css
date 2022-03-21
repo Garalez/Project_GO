@@ -79,3 +79,8 @@
   font-size: 20px;
   line-height: 28px;
 }
+
+.we-have__figure:hover {
+  transition-duration: 200ms;
+  transform: scale(110%);
+}
