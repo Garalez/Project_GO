@@ -115,7 +115,7 @@ iframe {
 .link {
     position: relative;
     text-decoration: none;
-    color: var(--pink);
+    color: var(--white);
 }
 
 .link::after {
