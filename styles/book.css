@@ -113,9 +113,8 @@
 .joy__console-input:checked + .joy__console-item-label::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(4px, 4px);
+  top: 4px;
+  left: 4px;
   width: 16px;
   height: 16px;
   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
