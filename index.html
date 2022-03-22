@@ -60,42 +60,48 @@
       <section class="we-have">
         <h2 class="we-have__title heading">У нас есть всё для классного отдыха с друзьями!</h2>
         <ul class="we-have__list">
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/vr.jpg" alt="Мужчина в VR очках"  class="we-have__pic">
-              <figcaption class="we-have__pic-desc">VR очки</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/audio.jpg" alt="Рука управляющая диджейским пультом"  class="we-have__pic">
-              <figcaption class="we-have__pic-desc">Аудио система 5.1 с отличным звуком</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/micro.jpg" alt="Девушка поёт на сцене" class="we-have__pic">
-              <figcaption class="we-have__pic-desc">Караоке (4 микрофона)</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/game.jpg" alt="Группа людей играющая в настольные игры" class="we-have__pic">
-              <figcaption class="we-have__pic-desc">Настольные игры</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/netflix.jpg" alt="Телевизор с изображением значка нетфликса" class="we-have__pic">
-              <figcaption class="we-have__pic-desc">Киносервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</figcaption>
-            </figure>
-          </li>
-          <li class="we-have__item">
-            <figure class="we-have__figure">
-              <img src="img/sony.jpg" alt="Комната с приглушенным светом, телевизором и игровыми приставками" class="we-have__pic">
-              <figcaption class="we-have__pic-desc">Playstation 5</figcaption>
-            </figure>
-          </li>
+          <div class="we-have__column1">
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/vr.jpg" alt="Мужчина в VR очках"  class="we-have__pic">
+                <figcaption class="we-have__pic-desc">VR очки</figcaption>
+              </figure>
+            </li>
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/game.jpg" alt="Группа людей играющая в настольные игры" class="we-have__pic">
+                <figcaption class="we-have__pic-desc">Настольные игры</figcaption>
+              </figure>
+            </li>
+          </div>
+          <div class="we-have__column2">
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/audio.jpg" alt="Рука управляющая диджейским пультом"  class="we-have__pic">
+                <figcaption class="we-have__pic-desc">Аудио система 5.1 с отличным звуком</figcaption>
+              </figure>
+            </li>
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/netflix.jpg" alt="Телевизор с изображением значка нетфликса" class="we-have__pic">
+                <figcaption class="we-have__pic-desc">Киносервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</figcaption>
+              </figure>
+            </li>
+          </div>
+          <div class="we-have__column3">
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/micro.jpg" alt="Девушка поёт на сцене" class="we-have__pic">
+                <figcaption class="we-have__pic-desc">Караоке (4 микрофона)</figcaption>
+              </figure>
+            </li>
+            <li class="we-have__item">
+              <figure class="we-have__figure">
+                <img src="img/sony.jpg" alt="Комната с приглушенным светом, телевизором и игровыми приставками" class="we-have__pic">
+                <figcaption class="we-have__pic-desc">Playstation 5</figcaption>
+              </figure>
+            </li>
+          </div>
         </ul>
       </section>
     </div>
@@ -168,16 +174,24 @@
                 <h4 class="joy__console-title">Приставка</h4>
                 <ul class="joy__console-list">
                   <li class="joy__console-item">
-                    <input type="radio" name="console" value="PS5" class="joy__console-input">PlayStation 5
+                    <label class="joy__console-item-label" for="playstation">PlayStation 5
+                      <input class="joy__console-input" type="radio" id="playstation" name="console" value="PS5">
+                    </label>
                   </li>
                   <li class="joy__console-item">
-                    <input type="radio" name="console" value="Sega" class="joy__console-input">Sega Mega Drive
+                    <label class="joy__console-item-label" for="sega">Sega Mega Drive
+                      <input class="joy__console-input" type="radio" id="sega" name="console" value="Sega">
+                    </label>
                   </li>
                   <li class="joy__console-item">
-                    <input type="radio" name="console" value="X-box" class="joy__console-input">X-box One S
+                    <label class="joy__console-item-label" for="x-box">X-box One S
+                      <input class="joy__console-input" type="radio" id="x-box" name="console" value="X-box">
+                    </label>
                   </li>
                   <li class="joy__console-item">
-                    <input type="radio" name="console" value="Dendy" class="joy__console-input">Dendy
+                    <label class="joy__console-item-label" for="dendy">Dendy
+                      <input class="joy__console-input" type="radio" id="dendy" name="console" value="Dendy">
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -186,16 +200,24 @@
                 <h4 class="board-games__title joy__console-title">Настольные игры</h4>
                 <ul class="board-games__list">
                   <li class="board-games__item">
-                    <input type="checkbox" name="board games" value="Jenga" class="board-games__input">Jenga
+                    <label class="board-games__item-label" for="jenga">Jenga
+                      <input class="board-games__input" type="checkbox" id="jenga" name="board games" value="Jenga">
+                    </label>
                   </li>
                   <li class="board-games__item">
-                    <input type="checkbox" name="board games" value="Monopoly" class="board-games__input">Monopoly
+                    <label class="board-games__item-label" for="monopoly">Monopoly
+                      <input class="board-games__input" type="checkbox" id="monopoly" name="board games" value="Monopoly">
+                    </label>
                   </li>
                   <li class="board-games__item">
-                    <input type="checkbox" name="board games" value="Manchkin" class="board-games__input">Манчкин
+                    <label class="board-games__item-label" for="manchkin">Манчкин
+                      <input class="board-games__input" type="checkbox" id="manchkin" name="board games" value="Manchkin" >
+                    </label>
                   </li>
                   <li class="board-games__item">
-                    <input type="checkbox" name="board games" value="Alias" class="board-games__input">Alias
+                    <label class="board-games__item-label" for="alias">Alias
+                      <input class="board-games__input" type="checkbox" id="alias" name="board games" value="Alias">
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -204,10 +226,14 @@
                 <h4 class="addition__title joy__console-title">Дополнительно</h4>
                 <ul class="addition__list">
                   <li class="addition__item">
-                    <input type="checkbox" name="added" value="Karaoke" class="addition__input">Караоке
+                    <label class="addition__item-label" for="added-sing">Караоке
+                      <input class="addition__input" type="checkbox" id="added-sing" name="added" value="Karaoke" >
+                    </label>
                   </li>
                   <li class="addition__item">
-                    <input type="checkbox" name="added" value="VR" class="addition__input">VR
+                    <label class="addition__item-label" for="added-vr">VR
+                      <input class="addition__input" type="checkbox" id="added-vr" name="added" value="VR">
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -226,7 +252,7 @@
                 </label>
               </div>
               <label class="date__first-name input-text" for="name">Имя
-                <input type="text" name="first name" required class="date__input" id="name">
+                <input type="text" name="first-name" required class="date__input" id="name">
               </label>
               <label class="date__phone input-text" for="phone">Телефон
                 <input type="tel" name="phone" required class="date__input" id="phone">
@@ -295,7 +321,7 @@
       <ul class="reviews__wrapper">
         <li class="reviews__part">
           <figure class="reviews__item-figure">
-            <img src="img/avatar-male1.png" alt="avatar" class="reviews__item-avatar">
+            <img class="reviews__item-avatar" src="img/avatar-male1.png" alt="avatar">
             <figcaption class="reviews__name">Макс Самойлов</figcaption>
           </figure>
           <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень
@@ -305,7 +331,7 @@
 
         <li class="reviews__part">
           <figure class="reviews__item-figure">
-            <img src="img/avatar-female1.png" alt="avatar" class="reviews__item-avatar">
+            <img class="reviews__item-avatar" src="img/avatar-female1.png" alt="avatar">
             <figcaption class="reviews__name">Оксана Григорьева</figcaption>
           </figure>
           <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
@@ -314,7 +340,7 @@
 
         <li class="reviews__part">
           <figure class="reviews__item-figure">
-            <img src="img/avatar-male2.png" alt="avatar" class="reviews__item-avatar">
+            <img class="reviews__item-avatar" src="img/avatar-male2.png" alt="avatar">
             <figcaption class="reviews__name">Никита Ященко</figcaption>
           </figure>
           <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление

@@ -5,8 +5,8 @@
   height: 87px;
   padding: 0 70px;
   cursor: pointer;
-  background-color: #fff;
-  color: #1c1a1a;
+  background-color: var(--white);
+  color: var(--dark);
   font-weight: 700;
   font-size: 24px;
   list-style: none;
@@ -24,7 +24,7 @@
 
 .questions__item:nth-child(2n) {
   background-color: #440f51;
-  color: white;
+  color: var(--white);
 }
 
 .questions__item:nth-child(odd) .questions__item-button {

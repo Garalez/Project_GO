@@ -28,26 +28,26 @@
   height: 55px;
   padding-top: 4px;
   background-color: inherit;
-  border: 3px solid #cd06ff;
+  border: 3px solid var(--pink);
   box-sizing: border-box;
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .menu__button:hover {
   transition-duration: 200ms;
-  background: #6c0287;
+  background: var(--main-color);
 }
 
 .menu__button:focus {
   transition-duration: 200ms;
-  background: #6c0287;
+  background: var(--main-color);
 }
 
 .menu__button:active {
   transition-duration: 200ms;
-  background: #640aa3;
+  background: var(--violet);
 }

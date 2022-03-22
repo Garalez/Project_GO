@@ -2,7 +2,7 @@
   max-width: 1240px;
   padding: 80px 30px;
   margin: 0 auto;
-  background: #440f51;
+  background: var(--purple-darker);
 }
 
 .book__title {
@@ -33,10 +33,6 @@
   line-height: 40px;
 }
 
-.book__input-button:not(:last-child) {
-  margin-right: 54px;
-}
-
 .joy__title {
   margin-bottom: 40px;
   text-align: center;
@@ -62,23 +58,30 @@
 
 .joy__console-item {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-size: 22px;
   line-height: 25px;
+}
+
+.joy__console-item-label {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 14px;
 }
 
 .joy__console-input {
   width: 27px;
   height: 27px;
-  margin-right: 12px;
 }
 
 .board-games__item {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-size: 22px;
+}
+
+.board-games__item-label {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 14px;
 }
 
 .board-games__item:not(:last-child) {
@@ -88,24 +91,26 @@
 .board-games__input {
   width: 25px;
   height: 25px;
-  margin-right: 12px;
 }
 
 .addition__input {
   width: 25px;
   height: 25px;
-  margin-right: 12px;
 }
 
 .addition__item {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   font-size: 22px;
 }
 
 .addition__item:not(:last-child) {
   margin-bottom: 24px;
+}
+
+.addition__item-label {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 14px;
 }
 
 .date__title {
@@ -125,8 +130,6 @@
 }
 
 .date__input {
-  position: relative;
-  margin-top: 6px;
   width: 300px;
   height: 52px;
 }
@@ -137,8 +140,8 @@
 }
 
 .date__when {
-  padding-top: 16px;
   display: flex;
+  align-items: flex-end;
   gap: 32px;
 }
 
@@ -146,13 +149,13 @@
   width: 300px;
   height: 60px;
   margin-left: 67%;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 10px;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--main-color);
 }
 
 .input-text {
@@ -164,7 +167,7 @@
 }
 
 .date__quantity {
-  padding-top: 16px;
+  align-self: flex-end;
 }
 
 .date__input::placeholder {
@@ -172,31 +175,31 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #211e1e;
+  color: var(--black);
 }
 
 .date__submit:hover {
-  background: #eadeed;
-  border: 3px solid #6c0287;
+  background: var(--beige);
+  border: 3px solid var(--main-color);
 }
 .date__submit:focus {
-  background: #ffffff;
-  border: 3px solid #6c0287;
+  background: var(--white);
+  border: 3px solid var(--main-color);
 }
 .date__submit:active {
-  background: #eadeed;
+  background: var(--beige);
   border: none;
 }
 
 .date__input:focus {
-  border: 2px solid #cd06ff;
+  border: 2px solid var(--pink);
   outline: none;
 }
 
 .joy__console-input:focus,
 .board-games__input:focus,
 .addition__input:focus {
-  outline: 1px solid #cd06ff;
+  outline: 1px solid var(--pink);
 }
 
 .book__input-button {
@@ -210,13 +213,13 @@
 }
 
 .book__halls-label {
-  display: inline-block;
+  display: block;
   width: 250px;
   height: 55px;
   padding-top: 7px;
   border-radius: 8px;
   cursor: pointer;
-  background: #ffffff;
+  background: var(--white);
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -226,27 +229,22 @@
 
 .placeholder-text {
   font-size: 18px;
-  color: #211e1e;
-}
-
-.book__halls-wrapper {
-  display: inline-block;
-  margin-right: 10px;
+  color: var(--black);
 }
 
 .book__halls-label:hover {
   transition-duration: 200ms;
-  background: #eadeed;
-  border: 3px solid #640aa3;
+  background: var(--beige);
+  border: 3px solid var(--violet);
 }
 
 .book__halls-label:focus {
   transition-duration: 200ms;
-  background: #ffffff;
-  border: 3px solid #640aa3;
+  background: var(--white);
+  border: 3px solid var(--violet);
 }
 
 .book__input-button:checked + .book__halls-label {
   transition-duration: 200ms;
-  background: #eadeed;
+  background: var(--beige);
 }

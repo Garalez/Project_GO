@@ -52,7 +52,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #cd06ff;
+  color: var(--pink);
 }
 
 .gameover__text-new {
@@ -61,7 +61,7 @@
   font-size: 75px;
   line-height: 106px;
   font-variant: small-caps;
-  color: #cd06ff;
+  color: var(--pink);
 }
 
 .gameover__text {
@@ -75,14 +75,14 @@
 .gameover__book-button {
   width: 374px;
   height: 80px;
-  background: #6c0287;
+  background: var(--main-color);
   border: none;
   border-radius: 10px;
-  box-shadow: 0 0 1em #6c0287;
+  box-shadow: 0 0 1em var(--main-color);
   font-weight: 700;
   font-size: 26px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .gameover__round-button {
@@ -101,17 +101,17 @@
 
 .gameover__book-button:hover {
   transition-duration: 200ms;
-  background: #840aa3;
+  background: var(--violet-lighter);
 }
 
 .gameover__book-button:focus {
   transition-duration: 200ms;
-  background: #840aa3;
+  background: var(--violet-lighter);
 }
 
 .gameover__book-button:active {
   transition-duration: 200ms;
-  background: #640aa3;
+  background: var(--violet);
 }
 
 .gameover__round-button:hover {
