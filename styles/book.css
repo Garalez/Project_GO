@@ -56,61 +56,105 @@
   margin-bottom: 22px;
 }
 
-.joy__console-item {
-  display: flex;
-  font-size: 22px;
-  line-height: 25px;
-}
-
-.joy__console-item-label {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 14px;
-}
-
-.joy__console-input {
-  width: 27px;
-  height: 27px;
-}
-
-.board-games__item {
-  display: flex;
-  font-size: 22px;
-}
-
-.board-games__item-label {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 14px;
-}
-
 .board-games__item:not(:last-child) {
   margin-bottom: 20px;
-}
-
-.board-games__input {
-  width: 25px;
-  height: 25px;
-}
-
-.addition__input {
-  width: 25px;
-  height: 25px;
-}
-
-.addition__item {
-  display: flex;
-  font-size: 22px;
 }
 
 .addition__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
-.addition__item-label {
+.joy__console-input,
+.board-games__input,
+.addition__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.joy__console-item,
+.board-games__item,
+.addition__item {
   display: flex;
-  flex-direction: row-reverse;
-  gap: 14px;
+  font-size: 22px;
+}
+
+.joy__console-input + .joy__console-item-label,
+.board-games__input + .board-games__item-label,
+.addition__input + .addition__item-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.joy__console-input + .joy__console-item-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.joy__console-input:checked + .joy__console-item-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+  border-radius: 50%;
+  outline: 1px solid var(--pink);
+}
+
+.joy__console-input:checked + .joy__console-item-label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(4px, 4px);
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  border-radius: 50%;
+}
+
+.board-games__input + .board-games__item-label::before,
+.addition__input + .addition__item-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+}
+
+.board-games__input:checked + .board-games__item-label::before,
+.addition__input:checked + .addition__item-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+  outline: 1px solid var(--pink);
+}
+
+.board-games__input:checked + .board-games__item-label::after,
+.addition__input:checked + .addition__item-label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/check-mark2.svg");
+  background-size: contain;
 }
 
 .date__title {
@@ -194,12 +238,6 @@
 .date__input:focus {
   border: 2px solid var(--pink);
   outline: none;
-}
-
-.joy__console-input:focus,
-.board-games__input:focus,
-.addition__input:focus {
-  outline: 1px solid var(--pink);
 }
 
 .book__input-button {
