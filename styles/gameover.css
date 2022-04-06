@@ -128,3 +128,68 @@
   transition-duration: 200ms;
   background-image: url("../img/down-active.svg");
 }
+
+@media (max-width: 1024px) {
+  .gameover {
+    height: 655px;
+    padding: 15px 0 42px 0;
+  }
+
+  .gameover__title {
+    padding-left: 60px;
+    font-size: 120px;
+    margin-bottom: 21px;
+  }
+
+  .gameover__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 160px;
+    margin-bottom: 29px;
+  }
+
+  .gameover__title::before {
+    background-image: url("../img/1024px/main1024.png");
+    width: 453px;
+    height: 520px;
+    top: 83px;
+    right: 66px;
+  }
+
+  .gameover__text-wrapper {
+    padding-left: 47px;
+    column-gap: 1px;
+    margin-bottom: 80px;
+  }
+
+  .gameover__text-digit {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .gameover__text-new {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .gameover__text {
+    max-width: 193px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .gameover__book-button {
+    position: absolute;
+    width: 296px;
+    height: 64px;
+    font-size: 22px;
+    top: 469px;
+    left: 98px;
+  }
+
+  .gameover__round-button {
+    transform: scale(0.7);
+    top: 72%;
+    left: 45%;
+  }
+}
