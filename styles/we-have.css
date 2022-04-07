@@ -139,3 +139,53 @@
     background-image: url("../img/1024px/sony1024.jpg");
   }
 }
+
+@media (max-width: 768px) {
+  .we-have {
+    padding: 37px 40px 35px 40px;
+  }
+
+  .we-have__title {
+    max-width: 500px;
+    margin-bottom: 28px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .we-have__list {
+    gap: 21px;
+    grid-template-areas:
+      "one three"
+      "five two"
+      "four six";
+  }
+
+  .we-have__item {
+    width: 334px;
+    height: 200px;
+  }
+
+  .item1 {
+    background-image: url("../img/768px/vr768.jpg");
+  }
+
+  .item2 {
+    background-image: url("../img/768px/game768.jpg");
+  }
+
+  .item3 {
+    background-image: url("../img/768px/audio768.jpg");
+  }
+
+  .item4 {
+    background-image: url("../img/768px/netflix768.jpg");
+  }
+
+  .item5 {
+    background-image: url("../img/768px/micro768.jpg");
+  }
+
+  .item6 {
+    background-image: url("../img/768px/sony768.jpg");
+  }
+}

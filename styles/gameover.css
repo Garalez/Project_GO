@@ -193,3 +193,63 @@
     left: 45%;
   }
 }
+
+@media (max-width: 768px) {
+  .gameover {
+    height: 597px;
+    padding: 16px 0 42px 0;
+  }
+
+  .gameover__title {
+    padding-left: 43px;
+    font-size: 86px;
+    line-height: 100%;
+  }
+
+  .gameover__subtitle {
+    padding-left: 110px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .gameover__title::before {
+    transform: scale(0.92);
+    top: 54px;
+    right: 22px;
+  }
+
+  .gameover__text-wrapper {
+    padding-left: 27px;
+    column-gap: 1px;
+    margin-bottom: 80px;
+  }
+
+  .gameover__text-digit {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .gameover__text-new {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .gameover__text {
+    max-width: 126px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .gameover__book-button {
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+    top: 403px;
+    left: 40px;
+  }
+
+  .gameover__round-button {
+    display: none;
+  }
+}

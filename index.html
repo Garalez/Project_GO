@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" type="image/svg+xml" href="img/icon.svg">
   <title>Проект "GO"</title>
   <link rel="stylesheet" href="./styles/normalize.css">
@@ -12,27 +13,32 @@
 <body>
   <header class="header">
     <div class="menu">
-
-      <nav class="navigation">
+      <a class="menu__toggle" href="#modal"></a>
+      <div class="menu__nav-logo"></div>
+      <nav class="navigation" id="modal">
         <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#halls" class="navigation__link link">Залы</a>
+          <li class="navigation__item modal-header">
+            <a class="menu__close" href="#"></a>
           </li>
           <li class="navigation__item">
-            <a href="#about" class="navigation__link link">О нас</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#book" class="navigation__link link">Бронь</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#reviews" class="navigation__link link">Отзывы</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#contacts" class="navigation__link link">Контакты</a>
-          </li>
-        </ul>
-        <button class="menu__button">Заказать звонок</button>
-      </nav>
+              <a href="#halls" class="navigation__link link">Залы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#book" class="navigation__link link">Бронь</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#reviews" class="navigation__link link">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contacts" class="navigation__link link">Контакты</a>
+              <button class="menu__button modal-button">Заказать звонок</button>
+            </li>
+          </ul>
+        </nav>
+      <button class="menu__button">Заказать звонок</button>
     </div>
   </header>
 
@@ -108,7 +114,7 @@
             <h3 class="joy__title">Собери набор развлечений</h3>
             <div class="joy__wrapper">
               <fieldset class="joy__console">
-                <h4 class="joy__console-title">Приставка</h4>
+                <h4 class="joy__console-title">Приставка:</h4>
                 <ul class="joy__console-list">
                   <li class="joy__console-item">
                     <input class="joy__console-input" type="radio" id="playstation" name="console" value="PS5">
@@ -179,7 +185,7 @@
                 </label>
               </div>
               <label class="date__first-name input-text" for="name">Имя
-                <input type="text" name="first-name" required class="date__input" id="name">
+                <input type="text" name="first-name" required class="date__input input-name" id="name">
               </label>
               <label class="date__phone input-text" for="phone">Телефон
                 <input type="tel" name="phone" required class="date__input" id="phone">
@@ -188,13 +194,15 @@
                 <input type="number" name="count" required class="date__input placeholder-text" placeholder="Сколько человек" id="peoples">
               </label>
               <label class="date__last-name input-text" for="surname">Фамилия
-                <input type="text" name="second name" required class="date__input" id="surname">
+                <input type="text" name="second name" required class="date__input input-surname" id="surname">
               </label>
               <label class="date__mail input-text" for="mail">E-mail
                 <input type="email" name="email" required class="date__input" id="mail">
               </label>
             </div>
-            <button type="submit" class="date__submit">Забронировать</button>
+            <div class="date__submit-wrap">
+              <button type="submit" class="date__submit">Забронировать</button>
+            </div>
           </fieldset>
         </form>
       </div>
@@ -204,40 +212,30 @@
       <h2 class="about__title heading">О нас</h2>
       <div class="about__wrap">
         <ul class="about__list">
-          <li class="about__item">
-            <img src="img/about1.jpg" class="about__item__img" alt="Девушка в vr-очках">
-            <img src="img/about2.jpg" class="about__item__img" alt="игра">
-          </li>
-          <li class="about__item">
-            <img src="img/about3.jpg" class="about__item__img" alt="игровая приставка и монитор">
-            <img src="img/about4.jpg" class="about__item__img" alt="геймбой">
-            <img src="img/about5.jpg" class="about__item__img" alt="джойстик">
-          </li>
-          <li class="about__item">
-            <img src="img/about6.jpg" class="about__item__img" alt="поющий мужчина">
-            <img src="img/about7.jpg" class="about__item__img" alt="мужчина в vr-очках">
-          </li>
+          <li class="about__item gallery1"></li>
+          <li class="about__item gallery2"></li>
+          <li class="about__item gallery3"></li>
+          <li class="about__item gallery4"></li>
+          <li class="about__item gallery5"></li>
+          <li class="about__item gallery6"></li>
+          <li class="about__item gallery7"></li>
         </ul>
       
-        <div class="about__all-text">
-          <div class="about__text-small">
-            <p class="about__text">Для наших гостей мы создали <i> концептуально новое игровое пространство
-              виртуальной реальности</i> в центральной части нашего города.</p>
-            <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу
-              и радовать Вас топовыми игровыми разработками со всего мира.</p>
-          </div>
+        <div class="about__text-small">
+          <p class="about__text">Для наших гостей мы создали <i> концептуально новое игровое пространство
+            виртуальной реальности</i> в центральной части нашего города.</p>
+          <p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу
+            и радовать Вас топовыми игровыми разработками со всего мира.</p>
+        </div>
 
-          <p class="about__quote"><b>GAME OVER </b> — это место незабываемых впечатлений</p>
+        <p class="about__quote"><b>GAME OVER </b> — это место незабываемых впечатлений</p>
 
-          <figure class="about__author">
-            <img src="img/pic.png" alt="Фото Аркадия Абакшина" class="about__author-pic">
-            <figcaption class="about__author-blockquote">
-              <blockquote>
-                <p class="about__blockqoute-text"><i>Аркадий Абакшин, создатель игровой территории </i><cite>GAME OVER</cite></p>
-              </blockquote>
-            </figcaption>
-          </figure>
-        </div> 
+        <figure class="about__author">
+          <img  class="about__author-pic" src="img/pic.png" alt="Фото Аркадия Абакшина">
+          <figcaption class="about__author-blockquote">
+              <p class="about__blockquote-text"><i>Аркадий Абакшин, создатель игровой территории </i><cite>GAME OVER</cite></p>
+          </figcaption>
+        </figure>
       </div>
     </article>
 

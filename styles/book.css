@@ -178,10 +178,15 @@
   gap: 32px;
 }
 
+.date__submit-wrap {
+  display: flex;
+  justify-content: end;
+  padding-right: 90px;
+}
+
 .date__submit {
   width: 300px;
   height: 60px;
-  margin-left: 67%;
   background: var(--white);
   box-shadow: 0 0 1em var(--white);
   border: none;
@@ -348,6 +353,10 @@
     height: 52px;
   }
 
+  .date__submit-wrap {
+    padding-right: 0;
+  }
+
   .date__submit {
     width: 254px;
     height: 50px;
@@ -359,5 +368,188 @@
   .input-text {
     font-size: 14px;
     line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    padding: 50px 41px 49px 41px;
+  }
+
+  .book__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .book__input-title {
+    margin-bottom: 30px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .book__halls-label {
+    width: 150px;
+    height: 38px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .book__input {
+    margin-bottom: 50px;
+  }
+
+  .joy__title {
+    margin-bottom: 31px;
+  }
+
+  .joy__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 46px;
+    padding: 0;
+    margin-bottom: 55px;
+  }
+
+  .joy__console-item:not(:last-child),
+  .addition__item:not(:last-child),
+  .board-games__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .joy__console-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .date__title {
+    margin-bottom: 29px;
+  }
+
+  .date__wrapper {
+    display: grid;
+    row-gap: 12px;
+    margin-bottom: 48px;
+    grid-template-areas:
+      "date people"
+      "name phone"
+      "surname mail";
+  }
+
+  .date__input {
+    width: 300px;
+    height: 52px;
+  }
+
+  .when {
+    width: 134px;
+    height: 52px;
+  }
+
+  .date__when {
+    margin-bottom: 24px;
+    gap: 13px;
+  }
+
+  .placeholder-text {
+    margin-bottom: 24px;
+  }
+
+  .date__submit {
+    width: 300px;
+    height: 60px;
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .date__submit-wrap {
+    display: flex;
+    justify-content: end;
+  }
+
+  .input-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .joy__console-input + .joy__console-item-label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .joy__console-input:checked + .joy__console-item-label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .joy__console-input:checked + .joy__console-item-label::after {
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .board-games__input + .board-games__item-label::before,
+  .addition__input + .addition__item-label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .board-games__input:checked + .board-games__item-label::before,
+  .addition__input:checked + .addition__item-label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .board-games__input:checked + .board-games__item-label::after,
+  .addition__input:checked + .addition__item-label::after {
+    width: 40px;
+    height: 40px;
+  }
+
+  .joy__console-input + .joy__console-item-label,
+  .board-games__input + .board-games__item-label,
+  .addition__input + .addition__item-label {
+    padding-left: 60px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .date__when {
+    grid-area: date;
+  }
+
+  .date__first-name {
+    grid-area: name;
+  }
+
+  .date__phone {
+    grid-area: phone;
+  }
+
+  .date__quantity {
+    grid-area: people;
+  }
+
+  .date__last-name {
+    grid-area: surname;
+  }
+
+  .date__mail {
+    grid-area: mail;
+  }
+
+  .input-name {
+    width: 280px;
+    height: 52px;
+  }
+
+  .input-surname {
+    width: 280px;
+    height: 52px;
   }
 }

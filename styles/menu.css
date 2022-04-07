@@ -12,7 +12,11 @@
   align-items: center;
 }
 
-.navigation::before {
+.menu__nav {
+  display: flex;
+}
+
+.menu__nav-logo {
   content: "";
   background-image: url("../img/logo.svg");
   background-repeat: no-repeat;
@@ -59,16 +63,21 @@
   background: var(--violet);
 }
 
+.menu__close,
+.modal-button {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .menu {
     padding: 30px 0 15px 60px;
   }
 
-  .navigation::before {
+  .menu__nav-logo {
     background-image: url("../img/1024px/logo1024.svg");
     width: 87px;
     height: 55px;
-    margin-right: 80px;
+    margin-right: 60px;
   }
 
   .navigation__list {
@@ -81,5 +90,101 @@
     width: 229px;
     height: 45px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 31px 0 15px 41px;
+  }
+
+  .menu__toggle {
+    content: "";
+    background-image: url("../img/768px/menu768.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 17px;
+    width: 54px;
+    height: 46px;
+    margin-right: 158px;
+  }
+
+  .menu__close {
+    position: absolute;
+    content: "";
+    background-image: url("../img/768px/close768.svg");
+    background-repeat: no-repeat;
+    width: 41.72px;
+    height: 41.72px;
+    top: 39px;
+    left: 39px;
+  }
+
+  .navigation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+  }
+
+  .navigation__list {
+    position: absolute;
+    padding-top: 96px;
+    width: 100%;
+    height: 490px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    gap: 11px;
+    background-color: var(--bgc-color);
+  }
+
+  .menu__close::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/768px/logo768.svg");
+    width: 87px;
+    height: 55px;
+    top: -7px;
+    left: 181px;
+  }
+
+  .navigation:target {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .menu__close,
+  .modal-button {
+    display: initial;
+  }
+
+  .navigation__link {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .menu__button {
+    position: absolute;
+    width: 229px;
+    height: 45px;
+    padding-top: 0px;
+    top: 40px;
+    right: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .modal-button {
+    top: 40px;
+    right: 40px;
   }
 }
