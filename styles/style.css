@@ -110,7 +110,7 @@ iframe {
     font-size: 24px;
 }
 
-.link {
+/* .link {
     position: relative;
     text-decoration: none;
     color: var(--white);
@@ -132,4 +132,4 @@ iframe {
 .link:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
+} */

@@ -553,3 +553,195 @@
     height: 52px;
   }
 }
+
+@media (max-width: 320px) {
+  .book {
+    padding: 30px 0;
+  }
+
+  .book__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .book__input-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .book__halls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 14px;
+  }
+
+  .book__halls-label {
+    width: 130px;
+    height: 30px;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .book__input {
+    margin-bottom: 30px;
+  }
+
+  .joy__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .joy__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+    padding-left: 20px;
+    margin-bottom: 18px;
+  }
+
+  .joy__console-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .joy__console-item {
+    display: flex;
+    height: 30px;
+  }
+
+  .joy__console-item:not(:last-child),
+  .addition__item:not(:last-child),
+  .board-games__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .joy__console-title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .date__title {
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .date__wrapper {
+    justify-content: center;
+    row-gap: 15px;
+    margin-bottom: 32px;
+    grid-template-areas:
+      "date"
+      "people"
+      "name"
+      "surname"
+      "phone"
+      "mail";
+  }
+
+  .date__input {
+    width: 280px;
+    height: 52px;
+  }
+
+  .when {
+    width: 134px;
+    height: 52px;
+  }
+
+  .date__when {
+    margin-bottom: 0px;
+    gap: 12px;
+  }
+
+  .placeholder-text {
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+
+  .input-surname {
+    margin-bottom: 13px;
+  }
+
+  .date__submit {
+    width: 280px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .date__submit-wrap {
+    justify-content: center;
+  }
+
+  .input-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .joy__console-input + .joy__console-item-label::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .joy__console-input:checked + .joy__console-item-label::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .joy__console-input:checked + .joy__console-item-label::after {
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .board-games__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .addition__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .board-games__input + .board-games__item-label::before,
+  .addition__input + .addition__item-label::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .board-games__input:checked + .board-games__item-label::before,
+  .addition__input:checked + .addition__item-label::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .board-games__input:checked + .board-games__item-label::after,
+  .addition__input:checked + .addition__item-label::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .joy__console-input + .joy__console-item-label,
+  .board-games__input + .board-games__item-label,
+  .addition__input + .addition__item-label {
+    padding-left: 50px;
+    padding-top: 0px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+}

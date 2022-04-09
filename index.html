@@ -14,31 +14,53 @@
   <header class="header">
     <div class="menu">
       <a class="menu__toggle" href="#modal"></a>
-      <div class="menu__nav-logo"></div>
+      <a class="menu__nav-logo" href="#callback"></a>
       <nav class="navigation" id="modal">
         <ul class="navigation__list">
           <li class="navigation__item modal-header">
             <a class="menu__close" href="#"></a>
           </li>
           <li class="navigation__item">
-              <a href="#halls" class="navigation__link link">Залы</a>
+              <a href="#halls" class="navigation__link">Залы</a>
             </li>
             <li class="navigation__item">
-              <a href="#about" class="navigation__link link">О нас</a>
+              <a href="#about" class="navigation__link">О нас</a>
             </li>
             <li class="navigation__item">
-              <a href="#book" class="navigation__link link">Бронь</a>
+              <a href="#book" class="navigation__link">Бронь</a>
             </li>
             <li class="navigation__item">
-              <a href="#reviews" class="navigation__link link">Отзывы</a>
+              <a href="#reviews" class="navigation__link">Отзывы</a>
             </li>
             <li class="navigation__item">
-              <a href="#contacts" class="navigation__link link">Контакты</a>
+              <a href="#contacts" class="navigation__link">Контакты</a>
               <button class="menu__button modal-button">Заказать звонок</button>
             </li>
           </ul>
         </nav>
-      <button class="menu__button">Заказать звонок</button>
+      <a class="menu__button" href="#callback">Заказать звонок</a>
+    </div>
+
+    <div class="header__callback" id="callback">
+      <ul class="header__callback-list">
+        <li class="header__callback-item">
+          <p class="header__callback-text">Заказать звонок</p>
+        </li>
+        <li class="header__callback-item">
+          <label class="header__callback-label">Имя
+            <input class="header__callback-input" type="text">
+          </label>
+        </li>
+        <li class="header__callback-item">
+          <label class="header__callback-label">Телефон
+            <input class="header__callback-input" type="tel">
+          </label>
+        </li>
+        <li class="header__callback-item">
+          <button class="header__callback-btn">Позвонить мне</button>
+          <a class="header__callback-close" href="#"></a>
+        </li>
+      </ul>
     </div>
   </header>
 
@@ -89,7 +111,7 @@
         <form action="https://jsonplaceholder.typicode.com/posts"
               method="POST">
           <fieldset class="book__input">
-            <h3 class="book__input-title">Выберите зал</h3>
+            <h3 class="book__input-title">Выбери зал</h3>
             <div class="book__halls">
               <div class="book__halls-wrapper">
                 <input class="book__input-button" type="radio" name="radio-1" value="80'S VIBES" id="check-1" >
@@ -284,7 +306,7 @@
       <ul class="questions__list">
         <li class="questions__item">
           <details class="questions__item-details">
-            <summary class="questions__item-summary">Можно ли бронировать комнату онлайн?</summary>
+            <summary class="questions__item-summary"><p class="summary-text">Можно ли бронировать комнату онлайн?</p></summary>
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
@@ -293,17 +315,17 @@
         </li>
         <li class="questions__item">
           <details class="questions__item-details">
-            <summary class="questions__item-summary">Могут ли мне вернуть деньги за бронь?</summary>
+            <summary class="questions__item-summary"><p class="summary-text">Могут ли мне вернуть деньги за бронь?</p></summary>
           </details>
         </li>
         <li class="questions__item">
           <details class="questions__item-details">
-            <summary class="questions__item-summary">Какая комната самая популярная?</summary>
+            <summary class="questions__item-summary"><p class="summary-text">Какая комната самая популярная?</p></summary>
           </details>
         </li>
         <li class="questions__item">
           <details class="questions__item-details">
-            <summary class="questions__item-summary">Как получить VIP карту?</summary>
+            <summary class="questions__item-summary"><p class="summary-text">Как получить VIP карту?</p></summary>
 
           </details>
         </li>
@@ -323,12 +345,12 @@
         <h2 class="contacts__title">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__text">
-            <div class="contacts__address typography">
+            <div class="contacts__address">
               <p class="contacts__address-upper">г. Москва</p>
               <p class="contacts__address-lower">ул. Усачёва, 29 к3</p>
             </div>
-            <p class="contacts__phone typography"><a href="tel:89509302893" class="contacts__phone-link link">8 (950) 930-28-93</a></p>
-            <p class="contacts__mail typography"><a href="mailto:GameOver@gmail.com" class="contacts__mail-link link">GameOver@gmail.com</a></p>
+            <p class="contacts__phone"><a href="tel:89509302893" class="contacts__phone-link">8 (950) 930-28-93</a></p>
+            <p class="contacts__mail"><a href="mailto:GameOver@gmail.com" class="contacts__mail-link">GameOver@gmail.com</a></p>
             <ul class="social">
               <li class="social-item">
                 <a href="http://instagram.com" target="_blank" class="social__link social__link_inst"><img src="img/insta.svg" alt="instagram" class="social__link-img"></a>
@@ -356,7 +378,7 @@
   
         <div class="footer__caption-second">
           <p class="footer__caption-second__text">Design by Anastasia Ilina</p>
-          <a class="footer__caption-second__link link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
+          <a class="footer__caption-second__link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
         </div>
       </div>
     </div>

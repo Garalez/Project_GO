@@ -117,7 +117,6 @@
 
   .halls-item3 {
     background-image: url("../img/768px/Wild_west768.jpg");
-    width: 441px;
     width: 335px;
     height: 200px;
   }
@@ -126,5 +125,42 @@
     background-image: url("../img/768px/Neon_style768.jpg");
     width: 335px;
     height: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .halls {
+    padding: 15px 20px 30px 20px;
+  }
+
+  .halls__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .halls__list {
+    gap: 10px;
+  }
+
+  .halls__item {
+    width: 280px;
+    height: 168px;
+  }
+
+  .halls-item1 {
+    background-image: url("../img/320px/80s_vibes320.jpg");
+  }
+
+  .halls-item2 {
+    background-image: url("../img/320px/Star_wars320.jpg");
+  }
+
+  .halls-item3 {
+    background-image: url("../img/320px/Wild_west320.jpg");
+  }
+
+  .halls-item4 {
+    background-image: url("../img/320px/Neon_style320.jpg");
   }
 }

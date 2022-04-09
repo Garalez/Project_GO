@@ -382,3 +382,134 @@
     line-height: 26px;
   }
 }
+
+@media (max-width: 320px) {
+  .about {
+    padding: 30px 20px 10px 20px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .about__wrap {
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: (2, 1fr);
+    grid-template-areas:
+      "text"
+      "gallery"
+      "upper"
+      "author";
+  }
+
+  .about__list {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 21px;
+  }
+
+  .about__text {
+    max-width: 280px;
+  }
+
+  .about__text:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .about__text:last-child {
+    padding-right: 0px;
+  }
+
+  .gallery1 {
+    background-image: url("../img/320px/gallery320-1.jpg");
+    width: 140px;
+    height: 96.78px;
+  }
+
+  .gallery2 {
+    background-image: url("../img/320px/gallery320-2.jpg");
+    width: 140px;
+    height: 96.78px;
+  }
+
+  .gallery3 {
+    background-image: url("../img/320px/gallery320-3.jpg");
+    width: 76.53px;
+    height: 105.23px;
+  }
+
+  .gallery4 {
+    background-image: url("../img/320px/gallery320-4.jpg");
+    width: 84px;
+    height: 105.23px;
+  }
+
+  .gallery5 {
+    background-image: url("../img/320px/gallery320-5.jpg");
+    width: 119.47px;
+    height: 105.23px;
+  }
+
+  .gallery6 {
+    background-image: url("../img/320px/gallery320-6.jpg");
+    width: 177.33px;
+    height: 77.99px;
+  }
+
+  .gallery7 {
+    background-image: url("../img/320px/gallery320-7.jpg");
+    width: 102.67px;
+    height: 77.99px;
+  }
+
+  .about__text-small {
+    padding: 0 0 0 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__author {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+
+  .about__quote {
+    margin-bottom: 0px;
+    padding: 0 0 0 16px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about__quote::before {
+    top: -15px;
+    left: -5px;
+    transform: scale(0.4);
+  }
+
+  .about__quote::after {
+    top: 30px;
+    right: 112px;
+    transform: scale(0.4) rotate(180deg);
+  }
+
+  .about__author-pic {
+    margin-right: 0px;
+    transform: scale(0.7);
+  }
+
+  .about__blockquote-text {
+    width: 100%;
+    padding-right: 60px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .about__figure-author {
+    width: 100px;
+  }
+}

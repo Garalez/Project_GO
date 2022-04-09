@@ -36,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 40px;
-  width: 527px;
+  max-width: 527px;
   margin-bottom: 150px;
 }
 
@@ -251,5 +251,65 @@
 
   .gameover__round-button {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .gameover {
+    height: 235px;
+    padding: 8px 0 23px 0;
+  }
+
+  .gameover__title {
+    margin-bottom: 5px;
+    padding-left: 22px;
+    font-size: 35px;
+  }
+
+  .gameover__subtitle {
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .gameover__title::before {
+    background-image: url("../img/320px/main320.png");
+    width: 161px;
+    height: 179px;
+    transform: scale(1);
+    top: 31px;
+    right: 22px;
+  }
+
+  .gameover__text-wrapper {
+    padding-left: 14px;
+    column-gap: 0;
+    margin-bottom: 80px;
+  }
+
+  .gameover__text-digit {
+    font-size: 26px;
+    line-height: 37px;
+  }
+
+  .gameover__text-new {
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .gameover__text {
+    max-width: 78px;
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  .gameover__book-button {
+    width: 117px;
+    height: 27px;
+    top: 161px;
+    left: 20px;
+    font-size: 10px;
+    border-radius: 4px;
   }
 }
