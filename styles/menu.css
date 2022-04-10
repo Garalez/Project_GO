@@ -77,12 +77,9 @@
   background: var(--violet);
 }
 
+.header__callback,
 .menu__close,
 .modal-button {
-  display: none;
-}
-
-.header__callback {
   display: none;
 }
 
@@ -96,6 +93,7 @@
     width: 87px;
     height: 55px;
     margin-right: 60px;
+    z-index: 4;
   }
 
   .navigation__list {
@@ -124,6 +122,7 @@
     width: 58px;
     height: 58px;
     margin-right: 158px;
+    z-index: 4;
   }
 
   .menu__toggle:hover {
@@ -197,11 +196,16 @@
     background-color: var(--bgc-color);
   }
 
-  .header__callback:target,
   .navigation:target {
     opacity: 1;
     visibility: visible;
     z-index: 5;
+  }
+
+  .header__callback:target {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3;
   }
 
   .header__callback {
@@ -255,16 +259,15 @@
     position: absolute;
     width: 229px;
     height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 0px;
     top: 40px;
     right: 40px;
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .modal-button {
-    top: 40px;
-    right: 40px;
+    z-index: 4;
   }
 
   .header__callback-item {
@@ -382,18 +385,19 @@
   }
 
   .modal-button {
-    top: 40px;
-    right: 40px;
-  }
-
-  .modal-button {
-    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 184px;
     height: 37px;
     left: 68px;
     top: 360px;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  .header__callback:target {
+    z-index: 5;
   }
 
   .header__callback {
