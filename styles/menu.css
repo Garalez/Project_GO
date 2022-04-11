@@ -297,6 +297,11 @@
   .header__callback-input {
     width: 280px;
     height: 52px;
+    outline: none;
+  }
+
+  .header__callback-input:focus {
+    border: 2px solid var(--pink);
   }
 
   .header__callback-btn {

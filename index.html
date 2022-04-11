@@ -41,27 +41,30 @@
       <a class="menu__button" href="#callback">Заказать звонок</a>
     </div>
 
-    <div class="header__callback" id="callback">
-      <ul class="header__callback-list">
-        <li class="header__callback-item">
-          <p class="header__callback-text">Заказать звонок</p>
-        </li>
-        <li class="header__callback-item">
-          <label class="header__callback-label">Имя
-            <input class="header__callback-input" type="text">
-          </label>
-        </li>
-        <li class="header__callback-item">
-          <label class="header__callback-label">Телефон
-            <input class="header__callback-input" type="tel">
-          </label>
-        </li>
-        <li class="header__callback-item">
-          <button class="header__callback-btn">Позвонить мне</button>
-          <a class="header__callback-close" href="#"></a>
-        </li>
-      </ul>
-    </div>
+    <form action="https://postman-echo.com/post"
+          method="POST">
+      <div class="header__callback" id="callback">
+        <ul class="header__callback-list">
+          <li class="header__callback-item">
+            <p class="header__callback-text">Заказать звонок</p>
+          </li>
+          <li class="header__callback-item">
+            <label class="header__callback-label">Имя
+              <input class="header__callback-input" type="text">
+            </label>
+          </li>
+          <li class="header__callback-item">
+            <label class="header__callback-label">Телефон
+              <input class="header__callback-input" type="tel">
+            </label>
+          </li>
+          <li class="header__callback-item">
+            <button class="header__callback-btn">Позвонить мне</button>
+            <a class="header__callback-close" href="#"></a>
+          </li>
+        </ul>
+      </div>
+    </form>
   </header>
 
   <main>
