@@ -1,22 +1,14 @@
 @import url("./menu.css");
-
 @import url("./we-have.css");
-
 @import url("./gameover.css");
-
 @import url("./halls.css");
-
 @import url("./book.css");
-
 @import url("./about.css");
-
 @import url("./reviews.css");
-
 @import url("./questions.css");
-
 @import url("./contacts.css");
-
 @import url("./var.css");
+@import url("./modal.css");
 
 html {
     position: relative;

@@ -19,8 +19,44 @@
   font-size: 24px;
 }
 
-.book__input {
+.book__fieldset {
   margin-bottom: 60px;
+}
+
+.book__halls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book__button {
+  width: 250px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  
+}
+
+.book__button:focus {
+  transition: 200ms ease-in-out;
+  background: var(--white);
+  border: 3px solid var(--violet);
+}
+
+.book__button:hover {
+  transition: 200ms ease-in-out;
+  background: var(--beige);
+  border: 3px solid var(--violet);
+}
+
+.book__button:active {
+  transition: 200ms ease-in-out;
+  background: var(--main-color);
+  border: 3px solid var(--white);
+  color: var(--white);
 }
 
 .joy__title {
@@ -103,11 +139,11 @@
 .joy__console-input:checked + .joy__console-item-label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: black;
   border-radius: 50%;
 }
 
@@ -222,10 +258,12 @@
   background: var(--beige);
   border: 3px solid var(--main-color);
 }
+
 .date__submit:focus {
   background: var(--white);
   border: 3px solid var(--main-color);
 }
+
 .date__submit:active {
   background: var(--beige);
   border: none;
@@ -236,51 +274,9 @@
   outline: none;
 }
 
-.book__input-button {
-  display: none;
-}
-
-.book__halls {
-  display: flex;
-  justify-content: space-between;
-  border: none;
-}
-
-.book__halls-label {
-  display: block;
-  width: 250px;
-  height: 55px;
-  padding-top: 7px;
-  border-radius: 8px;
-  cursor: pointer;
-  background: var(--white);
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
-  color: var(--black);
-  text-align: center;
-}
-
 .placeholder-text {
   font-size: 18px;
   color: var(--black);
-}
-
-.book__halls-label:hover {
-  transition-duration: 200ms;
-  background: var(--beige);
-  border: 3px solid var(--violet);
-}
-
-.book__halls-label:focus {
-  transition-duration: 200ms;
-  background: var(--white);
-  border: 3px solid var(--violet);
-}
-
-.book__input-button:checked + .book__halls-label {
-  transition-duration: 200ms;
-  background: var(--beige);
 }
 
 @media (max-width: 1024px) {
@@ -300,10 +296,9 @@
     line-height: 28px;
   }
 
-  .book__halls-label {
+  .book__button {
     width: 180px;
     height: 44px;
-    padding-top: 7px;
     border-radius: 6px;
     font-size: 20px;
     line-height: 24px;
@@ -388,16 +383,15 @@
     line-height: 28px;
   }
 
-  .book__halls-label {
-    width: 150px;
-    height: 38px;
-    padding-top: 10px;
-    font-size: 16px;
-    line-height: 20px;
+  .book__fieldset {
+    margin-bottom: 50px;
   }
 
-  .book__input {
-    margin-bottom: 50px;
+  .book__button {
+    width: 150px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .joy__title {
@@ -487,10 +481,10 @@
   }
 
   .joy__console-input:checked + .joy__console-item-label::after {
-    top: 5px;
-    left: 5px;
-    width: 30px;
-    height: 30px;
+    top: 7px;
+    left: 7px;
+    width: 26px;
+    height: 26px;
   }
 
   .board-games__input + .board-games__item-label::before,
@@ -577,17 +571,16 @@
     justify-content: center;
     column-gap: 20px;
     row-gap: 14px;
-  }
+  } 
 
-  .book__halls-label {
+  .book__button {
     width: 130px;
     height: 30px;
-    padding-top: 6px;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .book__input {
+  .book__fieldset {
     margin-bottom: 30px;
   }
 
@@ -700,10 +693,10 @@
   }
 
   .joy__console-input:checked + .joy__console-item-label::after {
-    top: 5px;
-    left: 5px;
-    width: 20px;
-    height: 20px;
+    top: 6px;
+    left: 6px;
+    width: 18px;
+    height: 18px;
   }
 
   .board-games__list {

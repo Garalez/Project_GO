@@ -8,17 +8,18 @@
   <title>Проект "GO"</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <script type="module" src="./scripts/index.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="menu">
-      <a class="menu__toggle" href="#modal"></a>
-      <a class="menu__nav-logo" href="#callback"></a>
-      <nav class="navigation" id="modal">
+      <button class="menu__toggle"></button>
+      <button class="menu__nav-logo"></button>
+      <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item modal-header">
-            <a class="menu__close" href="#"></a>
+            <button class="menu__close"></button>
           </li>
           <li class="navigation__item">
               <a href="#halls" class="navigation__link">Залы</a>
@@ -34,33 +35,33 @@
             </li>
             <li class="navigation__item">
               <a href="#contacts" class="navigation__link">Контакты</a>
-              <a class="menu__button modal-button" href="#callback">Заказать звонок</a>
+              <button class="menu__button modal-button">Заказать звонок</button>
             </li>
           </ul>
         </nav>
-      <a class="menu__button" href="#callback">Заказать звонок</a>
+      <button class="menu__button">Заказать звонок</button>
     </div>
 
-    <form action="https://postman-echo.com/post"
+    <form class="header__callback-form" action="https://postman-echo.com/post"
           method="POST">
-      <div class="header__callback" id="callback">
+      <div class="header__callback">
         <ul class="header__callback-list">
           <li class="header__callback-item">
             <p class="header__callback-text">Заказать звонок</p>
           </li>
           <li class="header__callback-item">
-            <label class="header__callback-label">Имя
-              <input class="header__callback-input" type="text">
+            <label class="header__callback-label" for="first-name">Имя
+              <input class="header__callback-input" type="text" name="first-name">
             </label>
           </li>
           <li class="header__callback-item">
-            <label class="header__callback-label">Телефон
-              <input class="header__callback-input" type="tel">
+            <label class="header__callback-label" for="surname">Телефон
+              <input class="header__callback-input" type="tel" name="surname">
             </label>
           </li>
           <li class="header__callback-item">
-            <button class="header__callback-btn">Позвонить мне</button>
-            <a class="header__callback-close" href="#"></a>
+            <button class="header__callback-btn" type="submit">Позвонить мне</button>
+            <button class="header__callback-close" type="button"></button>
           </li>
         </ul>
       </div>
@@ -113,26 +114,22 @@
         <h2 class="book__title">Забронировать зал просто</h2>
         <form action="https://postman-echo.com/post"
               method="POST">
-          <fieldset class="book__input">
+          <fieldset class="book__fieldset">
             <h3 class="book__input-title">Выбери зал</h3>
-            <div class="book__halls">
-              <div class="book__halls-wrapper">
-                <input class="book__input-button" type="radio" name="radio-1" value="80'S VIBES" id="check-1" >
-                <label class="book__halls-label" for="check-1" >80'S VIBES</label>
-              </div>
-              <div class="book__halls-wrapper">
-                <input class="book__input-button" type="radio"  name="radio-1"  value="STAR Wars" id="check-2">
-                <label class="book__halls-label" for="check-2">STAR WARS</label>
-              </div>
-              <div class="book__halls-wrapper">
-                <input  class="book__input-button" type="radio" name="radio-1"  value="WILD WEST" id="check-3">
-                <label  class="book__halls-label" for="check-3">WILD WEST</label>
-              </div>
-              <div class="book__halls-wrapper">
-                <input class="book__input-button" type="radio" name="radio-1"  value="NEON STYLE" id="check-4">
-                <label class="book__halls-label" for="check-4">NEON STYLE</label>
-              </div>
-            </div>
+            <ul class="book__halls">
+              <li class="book__halls-item">
+                <button class="book__button" type="button">80'S VIBES</button>
+              </li>
+              <li class="book__halls-item">
+                <button class="book__button" type="button">STAR WARS</button>
+              </li>
+              <li class="book__halls-item">
+                <button class="book__button" type="button">WILD WEST</button>
+              </li>
+              <li class="book__halls-item">
+                <button class="book__button" type="button">NEON STYLE</button>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="joy">
@@ -308,49 +305,49 @@
       <h2 class="questions__title">Частые вопросы</h2>
       <ul class="questions__list">
         <li class="questions__item">
-          <details class="questions__item-details">
-            <summary class="questions__item-summary"><span class="summary-text">Можно ли бронировать комнату онлайн?</span></summary>
+          <button class="questions__item-btn"><span class="questions__item-title">Можно ли бронировать комнату онлайн?</span></button>
+          <div class="questions__text-wrapper">
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
             </p>
-          </details>
+          </div>
         </li>
         <li class="questions__item">
-          <details class="questions__item-details">
-            <summary class="questions__item-summary"><span class="summary-text">Могут ли мне вернуть деньги за бронь?</span></summary>
+          <button class="questions__item-btn"><span class="questions__item-title">Могут ли мне вернуть деньги за бронь?</span></button>
+          <div class="questions__text-wrapper">
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
             </p>
-          </details>
+          </div>
         </li>
         <li class="questions__item">
-          <details class="questions__item-details">
-            <summary class="questions__item-summary"><span class="summary-text">Какая комната самая популярная?</span></summary>
+          <button class="questions__item-btn"><span class="questions__item-title">Какая комната самая популярная?</span></button>
+          <div class="questions__text-wrapper">
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
             </p>
-          </details>
+          </div>
         </li>
         <li class="questions__item">
-          <details class="questions__item-details">
-            <summary class="questions__item-summary"><span class="summary-text">Как получить VIP карту?</span></summary>
+          <button class="questions__item-btn"><span class="questions__item-title">Как получить VIP карту?</span></button>
+          <div class="questions__text-wrapper">
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
             </p>
-          </details>
+          </div>
         </li>
         <li class="questions__item">
-          <details class="questions__item-details">
-            <summary class="questions__item-summary"><span class="summary-text">Какая комната самая популярная?</span></summary>
+          <button class="questions__item-btn"><span class="questions__item-title">Какая комната самая популярная?</span></button>
+          <div class="questions__text-wrapper">
             <p class="questions__item-text">
               Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте.
               Также вы можете забронировать комнату позвонив по телефону <span class="questions__item-phone">8 (999) 958 - 48 - 38</span>
             </p>
-          </details>
+          </div>
         </li>
       </ul>
     </article>
