@@ -1,7 +1,6 @@
 const menu = document.querySelector('.navigation__list');
 const openMenuBtn = document.querySelector('.menu__toggle');
 const menuOverlay = document.querySelector('.navigation');
-menu.style.top = `${-menu.clientHeight}px`;
 
 const duration = 700;
 const distance = menu.clientHeight;
@@ -27,13 +26,20 @@ const menuControl = () => {
   menuOverlay.addEventListener('click', e => {
     const target = e.target;
     if (target === menuOverlay ||
-      target.classList.contains('menu__close')) {
+      target.classList.contains('menu__close') ||
+      target.classList.contains('navigation__link')) {
+      menu.style.top = '0px';
+      startAnimation(duration, (progress) => {
+        const top = easeInOut(progress) * distance;
+        menu.style.transform = `translateY(${-top}px)`;
+      });
       menuOverlay.classList.remove('navigation-active');
     }
   });
 
   openMenuBtn.addEventListener('click', () => {
     menuOverlay.classList.add('navigation-active');
+    menu.style.top = `${-distance}px`;
     startAnimation(duration, (progress) => {
       const top = easeInOut(progress) * distance;
       menu.style.transform = `translateY(${top}px)`;
