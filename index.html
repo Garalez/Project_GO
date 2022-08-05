@@ -8,6 +8,8 @@
   <title>Проект "GO"</title>
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/index.css">
+  <script defer src="./scripts/plugins/just-validate.production.min.js"></script>
+  <script defer src="./scripts/plugins/inputmask.min.js"></script>
   <script type="module" src="./scripts/index.js"></script>
 </head>
 
@@ -51,12 +53,12 @@
           </li>
           <li class="header__callback-item">
             <label class="header__callback-label" for="first-name">Имя
-              <input class="header__callback-input" type="text" name="first-name">
+              <input class="header__callback-input header__callback-name" type="text" name="first-name">
             </label>
           </li>
           <li class="header__callback-item">
-            <label class="header__callback-label" for="surname">Телефон
-              <input class="header__callback-input" type="tel" name="surname">
+            <label class="header__callback-label" for="tel">Телефон
+              <input class="header__callback-input header__callback-tel" type="tel" name="tel">
             </label>
           </li>
           <li class="header__callback-item">
@@ -85,7 +87,6 @@
       <button class="gameover__book-button">Забронировать</button>
       <a class="gameover__round-button" href="#we-have"></a>
     </section>
-
 
     <section class="we-have" id="we-have">
       <h2 class="we-have__title">У нас есть всё для классного отдыха с друзьями!</h2>
@@ -263,7 +264,38 @@
 
     <article class="reviews" id="reviews">
       <h2 class="reviews__title">Отзывы посетителей</h2>
-      <ul class="reviews__list">
+      <div class="reviews__swiper swiper">
+        <ul class="reviews__list swiper-wrapper">
+          <li class="reviews__item swiper-slide">
+            <figure class="reviews__item-figure">
+              <img class="reviews__item-avatar" src="img/avatar-male1.png" alt="avatar">
+              <figcaption class="reviews__name">Макс Самойлов</figcaption>
+            </figure>
+            <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень
+              круто! VR очки то просто бомба, никогда еще я не был в таком
+              полном игровом погружении. Сервис на высоте!</p>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <figure class="reviews__item-figure">
+              <img class="reviews__item-avatar" src="img/avatar-female1.png" alt="avatar">
+              <figcaption class="reviews__name">Оксана Григорьева</figcaption>
+            </figure>
+            <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный
+              получился корпоратив! У нас в городе больше нет подобных заведений</p>
+          </li>
+          <li class="reviews__item swiper-slide">
+            <figure class="reviews__item-figure">
+              <img class="reviews__item-avatar" src="img/avatar-male2.png" alt="avatar">
+              <figcaption class="reviews__name">Никита Ященко</figcaption>
+            </figure>
+            <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление
+              комнаты в стиле зведных войн, попал в атмосферу космоса</p>
+          </li>
+        </ul>
+        <div class="reviews__item-arrow arrow-prev"></div>
+        <div class="reviews__item-arrow arrow-next"></div>
+      </div>
+      <!-- <ul class="reviews__list">
         <li class="reviews__item-slider" id="item-1"></li>
         <li class="reviews__item-slider" id="item-2"></li>
         <li class="reviews__item-slider" id="item-3"></li>
@@ -298,7 +330,7 @@
           <a class="reviews__item-arrow arrow-prev" href="#item-2"></a>
           <a class="reviews__item-arrow arrow-next" href="#item-1"></a>
         </li>
-      </ul>
+      </ul> -->
     </article>
 
     <article class="questions">
@@ -380,7 +412,7 @@
               </li>
             </ul>
           </div>
-      
+
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d944.7340017274358!2d37.562493563257505!3d55.72429449300883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b9ae9cf96b1%3A0xcd391b0ea8af0dfe!2z0YPQuy4g0KPRgdCw0YfQtdCy0LAsIDI5LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MDQ4!5e0!3m2!1sru!2sua!4v1649077379773!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>

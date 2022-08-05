@@ -9,6 +9,7 @@
 @import url("./contacts.css");
 @import url("./var.css");
 @import url("./modal.css");
+@import url("./swiper-bundle.min.css");
 
 html {
     position: relative;

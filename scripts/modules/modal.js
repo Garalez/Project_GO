@@ -1,10 +1,15 @@
-const modalForm = document.querySelector('.header__callback-form');
-const modalOverlay = document.querySelector('.header__callback');
-const openModal = document.querySelectorAll('.menu__button');
-const navigationLogo = document.querySelector('.menu__nav-logo');
+import selectors from './selectors.js';
+const {
+  modalForm,
+  modalOverlay,
+  openModal,
+  navigationLogo,
+  form,
+  formTelInput,
+} = selectors;
 
 
-const modalControl = () => {
+export const modalControl = () => {
   navigationLogo.addEventListener('click', () => {
     modalOverlay.classList.add('is-visible');
   });
@@ -23,4 +28,35 @@ const modalControl = () => {
     }
   });
 };
-modalControl();
+
+export const modalValidate = () => {
+  const telMask = new Inputmask('+7 (999)-99-99-99');
+  telMask.mask(formTelInput);
+
+  const validation = new JustValidate(form);
+  validation
+      .addField('.header__callback-name', [
+        {
+          rule: 'required',
+          errorMessage: 'Укажите ваше имя',
+        },
+        {
+          rule: 'minLength',
+          value: 2,
+          errorMessage: 'Не короче 2 символов',
+        },
+      ])
+      .addField('.header__callback-tel', [
+        {
+          rule: 'required',
+          errorMessage: 'Укажите ваш телефон',
+        },
+        {
+          validator(value) {
+            const phone = formTelInput.inputmask.unmaskedvalue();
+            return !!(Number(phone) && phone.length === 10);
+          },
+          errorMessage: 'Укажите ваш телефон',
+        },
+      ]);
+};

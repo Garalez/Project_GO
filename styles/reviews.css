@@ -14,25 +14,14 @@
 }
 
 .reviews__list {
-  width: 100%;
-  height: 319px;
-  position: relative;
-}
-
-.reviews__item-slider {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 1px;
 }
 
 .reviews__item {
-  padding: 0 130px;
   display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+  justify-content: center;
 }
 
 .reviews__name {
@@ -41,14 +30,13 @@
 }
 
 .reviews__text {
-  width: 680px;
+  max-width: 680px;
   height: 214px;
   align-self: center;
   line-height: 28px;
 }
 
 .reviews__item-figure {
-  position: relative;
   margin-right: 20px;
 }
 
@@ -56,7 +44,7 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
+  left: 130px;
   width: 280px;
   height: 280px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
@@ -73,6 +61,8 @@
   background-repeat: no-repeat;
   width: 66px;
   height: 70px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .arrow-prev {
@@ -88,25 +78,6 @@
   top: 104px;
 }
 
-.item-1 {
-  z-index: 1;
-  opacity: 1;
-}
-
-*:target ~ .item-1 {
-  opacity: 0;
-}
-
-#item-1:target ~ .item-1 {
-  opacity: 1;
-}
-
-#item-2:target ~ .item-2,
-#item-3:target ~ .item-3 {
-  z-index: 3;
-  opacity: 1;
-}
-
 @media (max-width: 1024px) {
   .reviews {
     padding: 39px 0 21px 0;
@@ -118,14 +89,16 @@
     line-height: 40px;
   }
 
+  .reviews__swiper {
+    height: 250px;
+  }
+
   .reviews__list {
-    width: 100%;
     height: 253px;
   }
 
   .reviews__item {
-    height: 253px;
-    padding: 0 145px 0 136px;
+    align-items: center;
   }
 
   .reviews__name {
@@ -134,19 +107,28 @@
   }
 
   .reviews__text {
-    width: 680px;
-    height: 139px;
+    width: 496px;
+    height: 132px;
     font-size: 18px;
     line-height: 26px;
+    padding-left: 18px;
   }
 
   .reviews__item-figure::after {
     display: none;
   }
 
+  .reviews__item-figure {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+  }
+
   .reviews__item-avatar {
-    margin-bottom: 5px;
-    transform: scale(0.8);
+    width: 172px;
+    height: 172px;
+    margin-bottom: 25px;
   }
 
   .reviews__item-arrow {
@@ -176,18 +158,12 @@
     line-height: 36px;
   }
 
+  .reviews__swiper {
+    height: 210px;
+  }
+
   .reviews__list {
-    width: 100%;
-    max-height: 210px;
-  }
-
-  .reviews__item {
-    height: 222px;
-    padding: 0 117px 0 88px;
-  }
-
-  .reviews__item-figure {
-    margin-right: 0px;
+    height: 213px;
   }
 
   .reviews__name {
@@ -196,19 +172,21 @@
   }
 
   .reviews__text {
-    width: 100%;
+    width: 390px;
+    padding: 0;
     height: 125px;
     font-size: 16px;
     line-height: 22px;
   }
 
-  .reviews__item-figure::after {
-    display: none;
+  .reviews__item-figure {
+    padding-top: 24px;
   }
 
   .reviews__item-avatar {
-    margin-bottom: 0px;
-    transform: scale(0.8);
+    width: 153px;
+    height: 153px;
+    margin-bottom: 17px;
   }
 
   .reviews__item-arrow {
@@ -239,30 +217,18 @@
     line-height: 16px;
   }
 
+  .reviews__swiper {
+    height: 195px;
+  }
+
   .reviews__list {
     height: 195px;
-    max-height: 195px;
   }
 
   .reviews__item {
     height: 195px;
     flex-direction: column;
     padding: 0;
-  }
-
-  .reviews__item-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0px;
-  }
-
-  .reviews__item-avatar {
-    margin-bottom: 10px;
-    transform: scale(1);
-    width: 86px;
-    height: 86px;
   }
 
   .reviews__name {
@@ -272,14 +238,25 @@
   }
 
   .reviews__text {
-    width: 100%;
-    height: 65px;
+    width: 280px;
+    padding: 0;
+    height: 125px;
     font-size: 12px;
     line-height: 16px;
   }
 
-  .reviews__item-figure::after {
-    display: none;
+  .reviews__item-figure {
+    margin-right: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__item-avatar {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 9px;
   }
 
   .reviews__item-arrow {

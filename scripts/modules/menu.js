@@ -1,6 +1,9 @@
-const menu = document.querySelector('.navigation__list');
-const openMenuBtn = document.querySelector('.menu__toggle');
-const menuOverlay = document.querySelector('.navigation');
+import selectors from './selectors.js';
+const {
+  menu,
+  openMenuBtn,
+  menuOverlay,
+} = selectors;
 
 const duration = 700;
 const distance = menu.clientHeight;
@@ -22,7 +25,7 @@ const startAnimation = (duration, callback) => {
 
 const easeInOut = time => 0.5 * (1 - Math.cos(Math.PI * time));
 
-const menuControl = () => {
+export const menuControl = () => {
   menuOverlay.addEventListener('click', e => {
     const target = e.target;
     if (target === menuOverlay ||
@@ -47,4 +50,3 @@ const menuControl = () => {
   });
 };
 
-menuControl();

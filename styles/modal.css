@@ -25,26 +25,18 @@
   }
 
   .header__callback-list {
-    position: absolute;
+    position: relative;
     width: 600px;
     height: 498px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
     padding-top: 60px;
     background-color: var(--purple-darker);
   }
 
-  .header__callback-item {
-    position: relative;
-  }
-
-  .header__callback-item:nth-child(2) {
-    margin-bottom: 35px;
-  }
-
   .header__callback-text {
-    margin-bottom: 35px;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
@@ -62,6 +54,8 @@
   .header__callback-input {
     width: 280px;
     height: 52px;
+    font-size: 23px;
+    padding-left: 15px;
     outline: none;
   }
 
@@ -70,12 +64,8 @@
   }
 
   .header__callback-btn {
-    position: absolute;
     width: 300px;
     height: 60px;
-    top: 40px;
-    left: 50%;
-    transform: translate(-50%);
     box-shadow: 0 0 1em var(--white);
     border: none;
     border-radius: 10px;
@@ -93,8 +83,8 @@
     background-image: url("../img/768px/close-phone.svg");
     background-repeat: no-repeat;
     border: none;
-    left: 243px;
-    top: -303px;
+    right: 16px;
+    top: 13px;
     width: 42px;
     height: 42px;
   }
@@ -113,12 +103,9 @@
     width: 280px;
     height: 498px;
     padding-top: 60px;
+    gap: 43px;
   }
-
-  .header__callback-item:nth-child(2) {
-    margin-bottom: 45px;
-  }
-
+  
   .header__callback-text {
     font-size: 20px;
     line-height: 30px;
@@ -138,8 +125,8 @@
   }
 
   .header__callback-close {
-    left: 94px;
-    top: -304px;
+    right: 4px;
+    top: 6px;
     transform: scale(0.7);
   }
 }
